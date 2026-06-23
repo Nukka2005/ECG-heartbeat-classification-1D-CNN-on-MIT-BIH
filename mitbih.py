@@ -182,6 +182,7 @@ plt.xlabel('Epoch')
 plt.ylabel('Training loss')
 plt.title('Training loss per epoch')
 plt.grid(True)
+plt.savefig('loss_curve.png', dpi=150, bbox_inches='tight')
 plt.show()
 
 # %%
@@ -216,6 +217,7 @@ plt.ylabel('True Positive Rate  (sensitivity)')
 plt.title('ROC curve — test set')
 plt.legend()
 plt.grid(True)
+plt.savefig('roc_curve.png', dpi=150, bbox_inches='tight')
 plt.show()
 
 # %%
