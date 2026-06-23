@@ -62,6 +62,12 @@ varies by a few points between runs because of random weight initialisation.
 The 200-series is deliberately harder and the train/test split is
 patient-separated, so the score is not inflated by leakage.
 
+![ROC curve on the test set](roc_curve.png)
+
+Training converged cleanly over 20 epochs:
+
+![Training loss per epoch](loss_curve.png)
+
 ## Design notes
 
 - **Split by recording, not by beat.** A single patient's beats are highly
